@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>CSP Font Block Test</title>
+  <title>HTML meta tag CSP Font Block Test</title>
 
   <!-- CSP policy: blocks fonts from any source -->
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src 'none';">
@@ -25,7 +25,7 @@
   Originally from <a href="https://github.com/playwright-karthik/qatesting/blob/d96c70395c9401622adb2ff1b7556415d5a254f7/blockcsp.html">https://github.com/playwright-karthik/qatesting/blob/d96c70395c9401622adb2ff1b7556415d5a254f7/blockcsp.html</a> but I wanted a copy.
   <p>
     This page tries to load the <b>Roboto</b> font from Google Fonts.
-    Due to the CSP rule <code>font-src 'none'</code>, it should be blocked.
+    Due to the HTML meta tag CSP rule <code>font-src 'none'</code>, it should be blocked.
   </p>
   <p>
     Open your browser's DevTools → Console or Network tab to verify the font request is blocked.
